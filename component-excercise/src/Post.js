@@ -5,10 +5,10 @@ class Post extends React.Component {
         if (this.props.in == "main") {
             return <div class="mainPost">
                 <Image class="imageMainPost" linkImage={this.props.postContent.linkImage} />
-                {/* <div class="column"> */}
-                <Title class="titleMainPost" title={this.props.postContent.title} />
-                <Description class="descriptionMainPost" description={this.props.postContent.description} />
-                {/* </div> */}
+                <div class="contentMainPost">
+                    <Title class="titleMainPost" title={this.props.postContent.title} />
+                    <Description class="descriptionMainPost" description={this.props.postContent.description} />
+                </div>
             </div >
         }
         return null;
